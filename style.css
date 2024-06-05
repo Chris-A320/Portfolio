@@ -2,6 +2,7 @@ body{
 	margin:0px;
 }
 /* Body header */
+
 #body-header{
 	height: 55vh;
 	background-image: url("image/download.jpg");
@@ -243,6 +244,22 @@ section:nth-child(2n+1){
 	color: white;
 
 }
+
+
+#my-image{
+	height:15vh;
+	width:15vh;
+	margin:auto;
+	margin-top: -5vh;
+	position: relative;
+}
+#my-image img{
+	height:100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px 6px lightgrey;
+}
+}
 input {
 
   border-style: solid;
@@ -285,6 +302,16 @@ input:active{
 	border-width: 5px;
 	margin-bottom: 20px;
 	padding: 10px;
+
+}
+#contact-form input{
+	
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	margin-bottom: 20px;
+	padding: 10px;
+	
 
 }
 ::placeholder {
@@ -342,7 +369,7 @@ input:active{
 	background-color: blue;
 	position: absolute;
 	top: 30%;
-	left: -7%;
+	left: -5%;
 	z-index: 1;
 
 }
@@ -387,7 +414,7 @@ input:active{
 }
 .timeline-divider{
 	position: absolute;
-	height: 7%;
+	height: 72%;
 	top: 8%;
 
 	width:0;
@@ -397,6 +424,121 @@ input:active{
 }
 .timeline-treaveller{
 	position: sticky;
-	top: 0%;
+	top: 15%;
 	transform: rotate(90deg);
+}
+@media screen and (max-width:600px){
+	 #body-header{
+
+	height: 30vh;
+	/*width: ;*/
+	background-image: url("image/12.png");
+	background-size: 100% 100% ;
+	background-size: cover;
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	opacity: 0.9;
+	background-attachment: fixed;
+}
+
+
+#my-name{
+	font-size: 2.3rem;
+
+}
+#body-header nav li{
+	font-size:1rem;
+	
+}
+#ac{
+	width:90%;
+	text-align: auto;
+	letter-spacing: 0.2rem;
+	
+	
+}
+.timeline-box{
+	position: relative;
+	margin:5px;
+	width: 90%;
+	left:5%;
+	min-height: 150px;
+	/*border: 2px solid black ;*/
+
+
+}
+.timeline{
+	position: relative;
+	width: 90%;
+	/*border: 2px solid black;*/
+
+}
+.timeline-box{
+	position: relative;
+	margin:5px;
+	width: 90%;
+	left:50%;
+	min-height: 150px;
+	/*border: 2px solid black ;*/
+}
+.timeline-box:nth-child(2n){
+	left: 4%;
+}
+.timeline-box:nth-child(2n+1){
+	left: 4%;
+	
+}
+.timeline-box:nth-child(2n)::after{
+	content:'';
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: blue;
+	position: absolute;
+	top: 30%;
+	left: -5%;
+	z-index: 1;
+
+}
+.timeline-box:nth-child(2n+1)::after{
+	content:'';
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: blue;
+	position: absolute;
+	top: 30%;
+	left: -5%;
+	z-index: 1;
+
+}
+.timeline-divider{
+	position: absolute;
+	height: 73%;
+	top: 8%;
+
+	width:0;
+	border: 2px dashed cyan;
+	left: 2%;
+
+}
+.timeline-treaveller{
+	position: sticky;
+	top: 25%;
+	transform: rotate(90deg);
+}
+#contact-form{
+	margin-left: 80px;
+	margin-top: 10px;
+	display: inline;
+
+}
+.child input{
+	margin-top: -40px;
+}
+#contact-info{
+	margin-left: -90px;
+	display: inline;
+	/*margin-right: 500px;*/
+}
 }
